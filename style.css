@@ -1,0 +1,195 @@
+/* 
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-color: hsl(225, 100%, 94%);
+  background-size: 100%; 
+  background-repeat: no-repeat;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 30%;
+  box-shadow: 0 5rem 3rem rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin: 10rem auto;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.product-text {
+  margin: 2rem auto;
+  max-width: 70%;
+}
+
+.heading-3,
+.description {
+  text-align: center;
+}
+
+.description {
+  color: #888888;
+  font-weight: 500;
+}
+
+.heading-3 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1.6rem;
+}
+
+.flex-container {
+  background-color: hsl(225, 100%, 98%);
+  max-width: 80%;
+  display: flex;
+  gap: 1.5rem;
+  margin: 2.5rem auto;
+  padding: 2rem 2.3rem 2rem 2.3rem;
+  border-radius: 10px;
+}
+
+.music-icon {
+  width: 4.5rem;
+  justify-self: start;
+}
+
+.link-change {
+  margin-left: auto;
+  align-self: center;
+  color: hsl(245, 75%, 52%);
+  font-weight: 800;
+  transition: all 0.3s;
+}
+
+.link-change:hover {
+  color: hsl(224, 51%, 65%);
+  cursor: pointer;
+}
+
+.annual-plan {
+  align-self: center;
+}
+
+.plan {
+  font-weight: 900;
+}
+
+.price {
+  color: #888888;
+  font-weight: 700;
+}
+
+.confirm {
+  display: block;
+  border: none;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+  width: 80%;
+  padding: 1.5rem 6rem;
+  margin: 3rem auto;
+  border-radius: 12px;
+  background-color: hsl(245, 75%, 52%);
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 800;
+  transition: all 0.3s ease-in;
+}
+
+.confirm:hover {
+  background-color: hsl(224, 51%, 65%);
+  cursor: pointer;
+}
+
+.cancel {
+  display: block;
+  margin: 3.2rem auto;
+  text-decoration: none;
+  width: 45%;
+  text-align: center;
+  font-family: inherit;
+  color: hsl(227, 9%, 48%);
+  font-weight: 900;
+  transition: all 0.3s;
+}
+
+.cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* Media Queries */
+
+/* For screens less than 1200px */
+@media(max-width: 75em){
+
+  .container {
+    width: 38%;
+  }
+   
+}
+
+/* For screens less than 944px */
+@media(max-width: 59em){
+  
+  .container {
+    width: 45%;
+  }
+   
+
+}
+
+/* For screens less than 780px */
+@media(max-width: 49em){
+  
+  .container {
+    width: 53%;
+  }
+   
+  html {
+    font-size: 50%;
+  }
+
+
+}
+
+
+/* For screens less than 542px */
+@media(max-width: 34em){
+  
+  .container {
+    width: 80%;
+  }
+   
+  html {
+    font-size: 47%;
+  }
+
+
+}
